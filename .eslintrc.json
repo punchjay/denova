@@ -1,0 +1,128 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest/globals": true
+    },
+    "extends": [
+        "standard",
+        "plugin:react/recommended",
+        "prettier",
+        "prettier/react",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:jsx-a11y/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly",
+        "module": true,
+        "__dirname": true,
+        "process": true
+    },
+    "parserOptions": {
+        "ecmaversion": 8,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "settings": {
+        "import/resolver": {
+            "babel-module": {},
+            "alias": {
+                "map": [
+                    [
+                        "src",
+                        "./src"
+                    ],
+                    [
+                        "components",
+                        "./src/components"
+                    ],
+                    [
+                        "config",
+                        "./src/config"
+                    ],
+                    [
+                        "layers",
+                        "./src/layers"
+                    ],
+                    [
+                        "lib",
+                        "./src/lib"
+                    ],
+                    [
+                        "pages",
+                        "./src/pages"
+                    ],
+                    [
+                        "store",
+                        "./src/store"
+                    ],
+                    [
+                        "themes",
+                        "./src/themes"
+                    ],
+                    [
+                        "utils",
+                        "./src/utils"
+                    ],
+                    [
+                        "auth",
+                        "../secondstep-auth/src"
+                    ]
+                ],
+                "extensions": [
+                    ".ts",
+                    ".js",
+                    ".jsx",
+                    ".json"
+                ]
+            }
+        },
+        "react": {
+          "version": "detect"
+        }
+    },
+    "plugins": [
+        "prettier",
+        "promise",
+        "react",
+        "jest",
+        "import",
+        "jsx-a11y"
+    ],
+    "rules": {
+        "camelcase": 0,
+        "import/no-named-as-default": 0,
+        "prefer-promise-reject-errors": 0,
+        "prettier/prettier": "warn",
+        "react/display-name": 0,
+        "react/jsx-key": 1,
+        "react/jsx-no-bind": 0,
+        "react/jsx-no-duplicate-props": 2,
+        "react/jsx-no-undef": 2,
+        "react/jsx-pascal-case": 2,
+        "react/jsx-sort-props": 2,
+        "react/jsx-uses-react": 2,
+        "react/jsx-uses-vars": 2,
+        "react/no-did-mount-set-state": 0,
+        "react/no-did-update-set-state": 2,
+        "react/no-direct-mutation-state": 2,
+        "react/no-multi-comp": 0,
+        "react/no-string-refs": 2,
+        "react/no-unescaped-entities": 0,
+        "react/no-unknown-property": 2,
+        "react/no-unused-prop-types": 0,
+        "react/prefer-es6-class": 2,
+        "react/prop-types": 2,
+        "react/react-in-jsx-scope": 0,
+        "react/self-closing-comp": 2,
+        "react/sort-comp": 1,
+        "react/sort-prop-types": 2,
+        "react/wrap-multilines": 0
+    }
+}
