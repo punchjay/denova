@@ -69,10 +69,6 @@
                     [
                         "utils",
                         "./src/utils"
-                    ],
-                    [
-                        "auth",
-                        "../secondstep-auth/src"
                     ]
                 ],
                 "extensions": [
