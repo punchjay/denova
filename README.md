@@ -1,3 +1,15 @@
+# Denova
+
+Portfolio site built in Reactjs.
+
+### To run in dev mode
+
+```bash
+  # cd to root of repository
+  npm i
+  npm start
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
