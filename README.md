@@ -1,6 +1,6 @@
 # Denova
 
-Portfolio site built in Reactjs.
+Portfolio site built in React.js
 
 ### To run in dev mode
 
